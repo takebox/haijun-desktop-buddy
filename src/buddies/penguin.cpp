@@ -13,7 +13,7 @@ static void doSleep(uint32_t t) {
   static const char* const BREATHE[5] = { "            ", "   .---.    ", "  ( -- )    ", "  (_____)   ", "   =====    " };
   static const char* const SNORE[5]   = { "    o O .   ", "   .---.    ", "  ( __ )    ", "  (_____)   ", "   =====    " };
   static const char* const TIPPED[5]  = { "            ", "            ", "  .-----.   ", " ( --   )=> ", "  `~~~~~`   " };
-  static const char* const TIPPED2[5] = { "            ", "            ", "  .-----.   ", " ( zz   )=> ", "  `~~~~~`   " };
+  static const char* const TIPPED2[5] = { "            ", "            ", "  .-----.   ", " ( zz )=> ", "  `~~~~~`   " };
   static const char* const TWITCH[5]  = { "            ", "   .---.    ", "  ( ^^ )    ", " /(_____)   ", "   ~~~~~    " };
 
   const char* const* P[6] = { TUCK, BREATHE, SNORE, TIPPED, TIPPED2, TWITCH };
@@ -50,7 +50,7 @@ static void doIdle(uint32_t t) {
   static const char* const BLINK[5]   = { "   .---.    ", "  ( ->- )   ", " /(     )\\  ", "  `-----`   ", "   J   L    " };
   static const char* const LOOK_L[5]  = { "   .---.    ", "  (o> o )   ", " /(     )\\  ", "  `-----`   ", "   J   L    " };
   static const char* const LOOK_R[5]  = { "   .---.    ", "  ( o >o)   ", " /(     )\\  ", "  `-----`   ", "   J   L    " };
-  static const char* const PREEN[5]   = { "   .---.    ", "  ( o>o )   ", " /(  v  )\\  ", "  `-----`   ", "   J   L    " };
+  static const char* const PREEN[5]   = { "   .---.    ", "  ( o>o )   ", " /(  v )\\  ", "  `-----`   ", "   J   L    " };
   static const char* const FLAP[5]    = { "  \\.---./   ", "  ( o>o )   ", "/(     )\\   ", "  `-----`   ", "   J   L    " };
   static const char* const BOW[5]     = { "            ", "   .---.    ", "  ( v>v )   ", " /(_____)\\  ", "   J   L    " };
   static const char* const STRETCH[5] = { "  /.---.\\   ", " ( ^>^ )    ", "//(     )\\\\ ", "  `-----`   ", "   J   L    " };
@@ -125,10 +125,10 @@ static void doAttention(uint32_t t) {
 static void doCelebrate(uint32_t t) {
   static const char* const CROUCH[5]  = { "            ", "   .---.    ", "  ( ^>^ )   ", " /(_____)\\  ", "   J   L    " };
   static const char* const JUMP[5]    = { "  \\.---./   ", "  ( ^>^ )   ", " /(     )\\  ", "  `-----`   ", "   ^   ^    " };
-  static const char* const PEAK[5]    = { "  \\^---^/   ", "  ( O>O )   ", " /(  W  )\\  ", "  `-----`   ", "   v   v    " };
+  static const char* const PEAK[5]    = { "  \\^---^/   ", "  ( O>O )   ", " /(  W )\\  ", "  `-----`   ", "   v   v    " };
   static const char* const SPIN_L[5]  = { "   .---.    ", "  ( <>< )   ", "/(     )    ", "  `-----`   ", "   /   \\    " };
   static const char* const SPIN_R[5]  = { "   .---.    ", "  (>< ><)   ", " (     )\\   ", "  `-----`   ", "   \\   /    " };
-  static const char* const POSE[5]    = { "    \\_/     ", "   .---.    ", "  ( ^>^ )   ", "/(  W  )\\   ", "   J   L    " };
+  static const char* const POSE[5]    = { "    \\_/     ", "   .---.    ", "  ( ^>^ )   ", "/(  W )\\   ", "   J   L    " };
 
   const char* const* P[6] = { CROUCH, JUMP, PEAK, SPIN_L, SPIN_R, POSE };
   static const uint8_t SEQ[] = { 0,1,2,1,0, 3,4,3,4, 0,1,2,1,0, 5,5 };

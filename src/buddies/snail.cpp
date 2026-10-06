@@ -99,7 +99,7 @@ static void doBusy(uint32_t t) {
 // ─── ATTENTION ───  ~8s cycle, 6 poses — antennae periscope up, scanning
 static void doAttention(uint32_t t) {
   static const char* const ALERT[5]   = { "  ||  ||    ", "    .--.    ", "  _( OO )_  ", " (___OO___) ", "  ~~~~~~~~  " };
-  static const char* const SCAN_L[5]  = { "  \\\\  \\\\    ", "    .--.    ", "  _(OO  )_  ", " (___OO___) ", "  ~~~~~~~~  " };
+  static const char* const SCAN_L[5]  = { "  \\\\  \\\\    ", "    .--.    ", "  _(OO )_  ", " (___OO___) ", "  ~~~~~~~~  " };
   static const char* const SCAN_R[5]  = { "  //  //    ", "    .--.    ", "  _(  OO)_  ", " (___OO___) ", "  ~~~~~~~~  " };
   static const char* const SCAN_U[5]  = { "  ||  ||    ", "    .--.    ", "  _( ^^ )_  ", " (___OO___) ", "  ~~~~~~~~  " };
   static const char* const TENSE[5]   = { "  ||  ||    ", "   /.--.\\   ", "  _( OO )_  ", "/(___OO___)\\", " /~~~~~~~~\\ " };

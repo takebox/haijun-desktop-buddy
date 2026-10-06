@@ -12,7 +12,7 @@ static void doSleep(uint32_t t) {
   static const char* const CURL[5]    = { "            ", "            ", "  /\\____/\\  ", " ( -    - ) ", " (___zz___) " };
   static const char* const INHALE[5]  = { "            ", "  /\\____/\\  ", " ( -    - ) ", " (   --   ) ", " (________) " };
   static const char* const EXHALE[5]  = { "            ", "  /\\____/\\  ", " ( -    - ) ", "(    --    )", "(__________)" };
-  static const char* const SNORE[5]   = { "            ", "  /\\____/\\  ", " ( -    - ) ", "(    OO    )", "(__________)" };
+  static const char* const SNORE[5]   = { "            ", "  /\\____/\\  ", " ( -    - ) ", "(    OO )", "(__________)" };
   static const char* const JIGGLE[5]  = { "            ", "  /\\____/\\  ", " ( -    - ) ", "(   ~~~~   )", " ~~~~~~~~~~ " };
   static const char* const DROOL[5]   = { "            ", "  /\\____/\\  ", " ( -    u ) ", " (   __   ) ", " (___..___) " };
 
@@ -58,7 +58,7 @@ static void doIdle(uint32_t t) {
   static const char* const EAR_R[5]   = { "            ", "  /\\____|\\  ", " ( o    o ) ", " (   ..   ) ", "  `------'  " };
   static const char* const JIG_A[5]   = { "            ", "  /\\____/\\  ", " ( o    o ) ", "(    ..    )", " (________) " };
   static const char* const JIG_B[5]   = { "            ", "  /\\____/\\  ", " ( o    o ) ", " (   ..   ) ", "(__________)" };
-  static const char* const SNIFF[5]   = { "            ", "  /\\____/\\  ", " ( o    o ) ", " (   oo   ) ", "  `------'  " };
+  static const char* const SNIFF[5]   = { "            ", "  /\\____/\\  ", " ( o    o ) ", " (   oo ) ", "  `------'  " };
 
   const char* const* P[10] = { REST, LOOK_L, LOOK_R, LOOK_U, BLINK, EAR_L, EAR_R, JIG_A, JIG_B, SNIFF };
   static const uint8_t SEQ[] = {
@@ -103,12 +103,12 @@ static void doBusy(uint32_t t) {
 
 // ─── ATTENTION ───  ~8s cycle, 6 poses + ! pulse (heavy alert wobble)
 static void doAttention(uint32_t t) {
-  static const char* const ALERT[5]   = { "    ^  ^    ", "  /^____^\\  ", " ( O    O ) ", " (   o    ) ", "  `------'  " };
-  static const char* const SCAN_L[5]  = { "    ^  ^    ", "  /^____^\\  ", " (O     O ) ", " (   o    ) ", "  `------'  " };
-  static const char* const SCAN_R[5]  = { "    ^  ^    ", "  /^____^\\  ", " ( O     O) ", " (   o    ) ", "  `------'  " };
-  static const char* const PERK[5]    = { "    /\\/\\    ", "  /^____^\\  ", " ( ^    ^ ) ", " (   o    ) ", "  `------'  " };
-  static const char* const TENSE[5]   = { "    ^  ^    ", " /^^____^^\\ ", " ( O    O ) ", " (   o    ) ", " /`------'\\ " };
-  static const char* const GULP[5]    = { "    ^  ^    ", "  /^____^\\  ", " ( o    o ) ", " (   O    ) ", "  `------'  " };
+  static const char* const ALERT[5]   = { "    ^  ^    ", "  /^____^\\  ", " ( O    O ) ", " (   o ) ", "  `------'  " };
+  static const char* const SCAN_L[5]  = { "    ^  ^    ", "  /^____^\\  ", " (O     O ) ", " (   o ) ", "  `------'  " };
+  static const char* const SCAN_R[5]  = { "    ^  ^    ", "  /^____^\\  ", " ( O     O) ", " (   o ) ", "  `------'  " };
+  static const char* const PERK[5]    = { "    /\\/\\    ", "  /^____^\\  ", " ( ^    ^ ) ", " (   o ) ", "  `------'  " };
+  static const char* const TENSE[5]   = { "    ^  ^    ", " /^^____^^\\ ", " ( O    O ) ", " (   o ) ", " /`------'\\ " };
+  static const char* const GULP[5]    = { "    ^  ^    ", "  /^____^\\  ", " ( o    o ) ", " (   O ) ", "  `------'  " };
 
   const char* const* P[6] = { ALERT, SCAN_L, SCAN_R, PERK, TENSE, GULP };
   static const uint8_t SEQ[] = {
@@ -138,12 +138,12 @@ static void doAttention(uint32_t t) {
 
 // ─── CELEBRATE ───  ~6s cycle, 6 poses + confetti rain (heavy belly bounce)
 static void doCelebrate(uint32_t t) {
-  static const char* const CROUCH[5]  = { "            ", "  /\\____/\\  ", " ( ^    ^ ) ", "(    WW    )", "(__________)" };
-  static const char* const JUMP[5]    = { "  \\(    )/  ", "   /____\\   ", " ( ^    ^ ) ", " (   WW   ) ", "  `------'  " };
-  static const char* const PEAK[5]    = { "  \\^    ^/  ", "   /____\\   ", " ( ^    ^ ) ", " (   OO   ) ", "  `------'  " };
-  static const char* const SPIN_L[5]  = { "            ", "  /\\____/\\  ", "( <    < ) /", " (   ww   ) ", "  `------'  " };
-  static const char* const SPIN_R[5]  = { "            ", "  /\\____/\\  ", "\\( >    > )", " (   ww   ) ", "  `------'  " };
-  static const char* const POSE[5]    = { "    \\__/    ", "  /\\____/\\  ", " ( ^    ^ ) ", "/(   WW   )\\", "  `------'  " };
+  static const char* const CROUCH[5]  = { "            ", "  /\\____/\\  ", " ( ^    ^ ) ", "(    WW )", "(__________)" };
+  static const char* const JUMP[5]    = { "  \\(    )/  ", "   /____\\   ", " ( ^    ^ ) ", " (   WW ) ", "  `------'  " };
+  static const char* const PEAK[5]    = { "  \\^    ^/  ", "   /____\\   ", " ( ^    ^ ) ", " (   OO ) ", "  `------'  " };
+  static const char* const SPIN_L[5]  = { "            ", "  /\\____/\\  ", "( <    < ) /", " (   ww ) ", "  `------'  " };
+  static const char* const SPIN_R[5]  = { "            ", "  /\\____/\\  ", "\\( >    > )", " (   ww ) ", "  `------'  " };
+  static const char* const POSE[5]    = { "    \\__/    ", "  /\\____/\\  ", " ( ^    ^ ) ", "/(   WW )\\", "  `------'  " };
 
   const char* const* P[6] = { CROUCH, JUMP, PEAK, SPIN_L, SPIN_R, POSE };
   static const uint8_t SEQ[] = { 0,1,2,1,0, 3,4,3,4, 0,1,2,1,0, 5,5 };
@@ -167,7 +167,7 @@ static void doCelebrate(uint32_t t) {
 static void doDizzy(uint32_t t) {
   static const char* const TILT_L[5]  = { "            ", " /\\____/\\   ", "( @    @ )  ", " (   ~~   ) ", "  `------'  " };
   static const char* const TILT_R[5]  = { "            ", "   /\\____/\\ ", "  ( @    @ )", " (   ~~   ) ", "  `------'  " };
-  static const char* const WOOZY[5]   = { "            ", "  /\\____/\\  ", " ( x    @ ) ", " (   ~v   ) ", "  `------'  " };
+  static const char* const WOOZY[5]   = { "            ", "  /\\____/\\  ", " ( x    @ ) ", " (   ~v ) ", "  `------'  " };
   static const char* const WOOZY2[5]  = { "            ", "  /\\____/\\  ", " ( @    x ) ", " (   v~   ) ", "  `------'  " };
   static const char* const TUMBLE[5]  = { "            ", "  /\\____/\\  ", " ( @    @ ) ", "(    --    )", " /`-_---_'\\ " };
 
@@ -196,12 +196,12 @@ static void doDizzy(uint32_t t) {
 
 // ─── HEART ───  ~10s cycle, 6 poses + rising heart stream (blushy chonk)
 static void doHeart(uint32_t t) {
-  static const char* const DREAMY[5]  = { "            ", "  /\\____/\\  ", " ( ^    ^ ) ", " (   ww   ) ", "  `------'  " };
-  static const char* const BLUSH[5]   = { "            ", "  /\\____/\\  ", " (#^    ^#) ", " (   ww   ) ", "  `------'  " };
-  static const char* const EYES_C[5]  = { "            ", "  /\\____/\\  ", " ( <3  <3 ) ", " (   ww   ) ", "  `------'  " };
-  static const char* const TWIRL[5]   = { "            ", "  /\\____/\\  ", " ( @    @ ) ", "(    ww    )", " /`------'\\ " };
+  static const char* const DREAMY[5]  = { "            ", "  /\\____/\\  ", " ( ^    ^ ) ", " (   ww ) ", "  `------'  " };
+  static const char* const BLUSH[5]   = { "            ", "  /\\____/\\  ", " (#^    ^#) ", " (   ww ) ", "  `------'  " };
+  static const char* const EYES_C[5]  = { "            ", "  /\\____/\\  ", " ( <3  <3 ) ", " (   ww ) ", "  `------'  " };
+  static const char* const TWIRL[5]   = { "            ", "  /\\____/\\  ", " ( @    @ ) ", "(    ww )", " /`------'\\ " };
   static const char* const SIGH[5]    = { "            ", "  /\\____/\\  ", " ( -    - ) ", " (   ^^   ) ", "  `------'  " };
-  static const char* const HUG[5]     = { "  v      v  ", "  /\\____/\\  ", " ( ^    ^ ) ", "/(   ww   )\\", "  `------'  " };
+  static const char* const HUG[5]     = { "  v      v  ", "  /\\____/\\  ", " ( ^    ^ ) ", "/(   ww )\\", "  `------'  " };
 
   const char* const* P[6] = { DREAMY, BLUSH, EYES_C, TWIRL, SIGH, HUG };
   static const uint8_t SEQ[] = {

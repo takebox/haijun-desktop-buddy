@@ -48,7 +48,7 @@ static void doSleep(uint32_t t) {
 // ─── IDLE ───  ~14s cycle, 10 micro-poses
 static void doIdle(uint32_t t) {
   static const char* const HOVER[5]   = { "            ", "   .----.   ", "  ( o    o )", "  |   __   |", "  ~`~``~`~  " };
-  static const char* const LOOK_L[5]  = { "            ", "   .----.   ", "  (o    o  )", "  |   __   |", "  ~`~``~`~  " };
+  static const char* const LOOK_L[5]  = { "            ", "   .----.   ", "  (o    o )", "  |   __   |", "  ~`~``~`~  " };
   static const char* const LOOK_R[5]  = { "            ", "   .----.   ", "  (  o    o)", "  |   __   |", "  ~`~``~`~  " };
   static const char* const LOOK_U[5]  = { "            ", "   .----.   ", "  ( ^    ^ )", "  |   __   |", "  ~`~``~`~  " };
   static const char* const BLINK[5]   = { "            ", "   .----.   ", "  ( -    - )", "  |   __   |", "  ~`~``~`~  " };

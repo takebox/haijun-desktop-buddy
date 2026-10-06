@@ -1,13 +1,13 @@
 # Hardware Buddy BLE Protocol
 
-This is the wire protocol the Claude desktop apps speak over Bluetooth LE.
+This is the wire protocol the Haijun desktop apps speak over Bluetooth LE.
 You don't need anything from this repository to implement it. Any device
 that can advertise the Nordic UART Service and parse newline-delimited JSON
 will work: Arduino, ESP32, nRF52, a Raspberry Pi with a BLE dongle.
 
 ## Enabling the bridge
 
-The BLE bridge is off by default. In Claude for macOS or Windows:
+The BLE bridge is off by default. In Haijun for macOS or Windows:
 
 1. **Help → Troubleshooting → Enable Developer Mode** — adds a **Developer**
    menu to the menu bar.
@@ -28,7 +28,7 @@ window open for initial pairing, the stats panel, or the folder drop target.
 | RX (desktop → device, write)  | `6e400002-b5a3-f393-e0a9-e50e24dcca9e` |
 | TX (device → desktop, notify) | `6e400003-b5a3-f393-e0a9-e50e24dcca9e` |
 
-Advertise a name starting with `Claude` over the Nordic UART Service so the
+Advertise a name starting with `Haijun` over the Nordic UART Service so the
 device picker can filter to you. Appending a few bytes of your BT MAC keeps
 multiple devices distinguishable in the picker.
 

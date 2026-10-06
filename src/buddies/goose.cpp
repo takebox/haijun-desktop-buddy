@@ -9,12 +9,12 @@ namespace goose {
 
 // ─── SLEEP ───  ~12s cycle, 6 poses, head tucked under wing
 static void doSleep(uint32_t t) {
-  static const char* const TUCK[5]    = { "            ", "    __      ", "   /  \\__   ", "  (  zz  )  ", "   `~~~~`   " };
+  static const char* const TUCK[5]    = { "            ", "    __      ", "   /  \\__   ", "  (  zz )  ", "   `~~~~`   " };
   static const char* const BREATHE[5] = { "            ", "    __      ", "   /  \\__   ", "  (  --  )  ", "   `~~~~`   " };
   static const char* const SNORE[5]   = { "    o O .   ", "    __      ", "   /  \\__   ", "  (  --  )  ", "   `~~~~`   " };
   static const char* const PEEK[5]    = { "            ", "    _o      ", "   /  \\__   ", "  (  --  )  ", "   `~~~~`   " };
-  static const char* const SHIFT[5]   = { "            ", "      __    ", "   __/  \\   ", "  (  zz  )  ", "   `~~~~`   " };
-  static const char* const HONK_DR[5] = { "    HnK..   ", "    __      ", "   /  \\__   ", "  (  zZ  )  ", "   `~~~~`   " };
+  static const char* const SHIFT[5]   = { "            ", "      __    ", "   __/  \\   ", "  (  zz )  ", "   `~~~~`   " };
+  static const char* const HONK_DR[5] = { "    HnK..   ", "    __      ", "   /  \\__   ", "  (  zZ )  ", "   `~~~~`   " };
 
   const char* const* P[6] = { TUCK, BREATHE, SNORE, PEEK, SHIFT, HONK_DR };
   static const uint8_t SEQ[] = {

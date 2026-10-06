@@ -101,8 +101,7 @@ void bleInit(const char* deviceName) {
 
   txChar = svc->createCharacteristic(
     NUS_TX_UUID,
-    BLECharacteristic::PROPERTY_NOTIFY
-  );
+    BLECharacteristic::PROPERTY_NOTIFY );
   txChar->setAccessPermissions(ESP_GATT_PERM_READ_ENCRYPTED);
   BLE2902* cccd = new BLE2902();
   cccd->setAccessPermissions(ESP_GATT_PERM_READ_ENCRYPTED | ESP_GATT_PERM_WRITE_ENCRYPTED);
@@ -110,8 +109,7 @@ void bleInit(const char* deviceName) {
 
   rxChar = svc->createCharacteristic(
     NUS_RX_UUID,
-    BLECharacteristic::PROPERTY_WRITE | BLECharacteristic::PROPERTY_WRITE_NR
-  );
+    BLECharacteristic::PROPERTY_WRITE | BLECharacteristic::PROPERTY_WRITE_NR );
   rxChar->setAccessPermissions(ESP_GATT_PERM_WRITE_ENCRYPTED);
   rxChar->setCallbacks(new RxCallbacks());
 

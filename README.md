@@ -1,18 +1,18 @@
-# claude-desktop-buddy
+# haijun-desktop-buddy
 
-Claude for macOS and Windows can connect Claude Cowork and Haijun Code to
+Haijun Code for macOS and Windows can connect Haijun Cowork and Haijun Code to
 maker devices over BLE, so developers and makers can build hardware that
 displays permission prompts, recent messages, and other interactions. We've
-been impressed by the creativity of the maker community around Claude -
+been impressed by the creativity of the maker community around Haijun -
 providing a lightweight, opt-in API is our way of making it easier to build
-fun little hardware devices that integrate with Claude.
+fun little hardware devices that integrate with Haijun.
 
 > **Building your own device?** You don't need any of the code here. See
 > **[REFERENCE.md](REFERENCE.md)** for the wire protocol: Nordic UART
 > Service UUIDs, JSON schemas, and the folder push transport.
 
 As an example, we built a desk pet on ESP32 that lives off permission
-approvals and interaction with Claude. It sleeps when nothing's happening,
+approvals and interaction with Haijun. It sleeps when nothing's happening,
 wakes when sessions start, gets visibly impatient when an approval prompt is
 waiting, and lets you approve or deny right from the device.
 
@@ -48,7 +48,7 @@ Once running, you can also wipe everything from the device itself: **hold A
 
 ## Pairing
 
-To pair your device with Claude, first enable developer mode (**Help →
+To pair your device with Haijun, first enable developer mode (**Help →
 Troubleshooting → Enable Developer Mode**). Then, open the Hardware Buddy
 window in **Developer → Open Hardware Buddy…**, click **Connect**, and pick
 your device from the list. macOS will prompt for Bluetooth permission on

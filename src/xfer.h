@@ -131,8 +131,7 @@ inline bool xferCommand(JsonDocument& doc) {
       (unsigned long)(LittleFS.totalBytes() - LittleFS.usedBytes()),
       (unsigned long)LittleFS.totalBytes(),
       stats().approvals, stats().denials, statsMedianVelocity(),
-      (unsigned long)stats().napSeconds, stats().level
-    );
+      (unsigned long)stats().napSeconds, stats().level );
     Serial.write(b, len);
     bleWrite((const uint8_t*)b, len);
     return true;

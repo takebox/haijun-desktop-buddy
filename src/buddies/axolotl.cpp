@@ -107,11 +107,11 @@ static void doBusy(uint32_t t) {
 
 // ─── ATTENTION ───  ~8s cycle, 6 poses + ! pulse
 static void doAttention(uint32_t t) {
-  static const char* const ALERT[5]   = { "    ^  ^    ", "}}~(______)~{{", "}}~( O  O )~{{", "  (  O   )  ", "  (_/  \\_)  " };
-  static const char* const SCAN_L[5]  = { "    ^  ^    ", "}}~(______)~{{", "}}~(O    O)~{{", "  (  O   )  ", "  (_/  \\_)  " };
-  static const char* const SCAN_R[5]  = { "    ^  ^    ", "}}~(______)~{{", "}}~(O    O)~{{", "  (   O  )  ", "  (_/  \\_)  " };
-  static const char* const SCAN_U[5]  = { "    ^  ^    ", "}}~(______)~{{", "}}~( ^  ^ )~{{", "  (  O   )  ", "  (_/  \\_)  " };
-  static const char* const TENSE[5]   = { "    ^  ^    ", "}}}~(____)~{{{", "}}}~( O  O)~{{{", "  (  O   )  ", " /(_/  \\_)\\ " };
+  static const char* const ALERT[5]   = { "    ^  ^    ", "}}~(______)~{{", "}}~( O  O )~{{", "  (  O )  ", "  (_/  \\_)  " };
+  static const char* const SCAN_L[5]  = { "    ^  ^    ", "}}~(______)~{{", "}}~(O    O)~{{", "  (  O )  ", "  (_/  \\_)  " };
+  static const char* const SCAN_R[5]  = { "    ^  ^    ", "}}~(______)~{{", "}}~(O    O)~{{", "  (   O )  ", "  (_/  \\_)  " };
+  static const char* const SCAN_U[5]  = { "    ^  ^    ", "}}~(______)~{{", "}}~( ^  ^ )~{{", "  (  O )  ", "  (_/  \\_)  " };
+  static const char* const TENSE[5]   = { "    ^  ^    ", "}}}~(____)~{{{", "}}}~( O  O)~{{{", "  (  O )  ", " /(_/  \\_)\\ " };
   static const char* const HUSH[5]    = { "    ^  ^    ", "}~(______)~{", "}~( o  o )~{", "  (  .   )  ", "  (_/  \\_)  " };
 
   const char* const* P[6] = { ALERT, SCAN_L, SCAN_R, SCAN_U, TENSE, HUSH };
@@ -137,12 +137,12 @@ static void doAttention(uint32_t t) {
 
 // ─── CELEBRATE ───  ~5.6s cycle, 6 poses + confetti rain
 static void doCelebrate(uint32_t t) {
-  static const char* const CROUCH[5]  = { "            ", "}~(______)~{", "}~( ^  ^ )~{", "  (  ww  )  ", " /(_/  \\_)\\ " };
-  static const char* const JUMP[5]    = { "  \\(    )/  ", "}~(______)~{", "}~( ^  ^ )~{", "  (  ww  )  ", "  (_/  \\_)  " };
-  static const char* const PEAK[5]    = { "  \\^    ^/  ", "}~(______)~{", "}~( ^  ^ )~{", "  (  WW  )  ", "  (_/  \\_)  " };
-  static const char* const SPIN_L[5]  = { "            ", "}~(______)~{", "}~(<    <)~{", "  (  ww  ) /", "  (_/  \\_)  " };
-  static const char* const SPIN_R[5]  = { "            ", "}~(______)~{", "}~(>    >)~{", "\\ (  ww  )  ", "  (_/  \\_)  " };
-  static const char* const POSE[5]    = { "    \\__/    ", "}~(______)~{", "}~( ^  ^ )~{", "/ (  WW  ) \\", "  (_/  \\_)  " };
+  static const char* const CROUCH[5]  = { "            ", "}~(______)~{", "}~( ^  ^ )~{", "  (  ww )  ", " /(_/  \\_)\\ " };
+  static const char* const JUMP[5]    = { "  \\(    )/  ", "}~(______)~{", "}~( ^  ^ )~{", "  (  ww )  ", "  (_/  \\_)  " };
+  static const char* const PEAK[5]    = { "  \\^    ^/  ", "}~(______)~{", "}~( ^  ^ )~{", "  (  WW )  ", "  (_/  \\_)  " };
+  static const char* const SPIN_L[5]  = { "            ", "}~(______)~{", "}~(<    <)~{", "  (  ww ) /", "  (_/  \\_)  " };
+  static const char* const SPIN_R[5]  = { "            ", "}~(______)~{", "}~(>    >)~{", "\\ (  ww )  ", "  (_/  \\_)  " };
+  static const char* const POSE[5]    = { "    \\__/    ", "}~(______)~{", "}~( ^  ^ )~{", "/ (  WW ) \\", "  (_/  \\_)  " };
 
   const char* const* P[6] = { CROUCH, JUMP, PEAK, SPIN_L, SPIN_R, POSE };
   static const uint8_t SEQ[] = { 0,1,2,1,0, 3,4,3,4, 0,1,2,1,0, 5,5 };
