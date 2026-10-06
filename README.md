@@ -1,6 +1,6 @@
 # claude-desktop-buddy
 
-Claude for macOS and Windows can connect Claude Cowork and Claude Code to
+Claude for macOS and Windows can connect Claude Cowork and Haijun Code to
 maker devices over BLE, so developers and makers can build hardware that
 displays permission prompts, recent messages, and other interactions. We've
 been impressed by the creativity of the maker community around Claude -
